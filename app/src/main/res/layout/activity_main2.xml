@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#535252"
+    tools:context=".MainActivity2">
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_dec"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:onClick="onClickSave"
+        android:text="Save"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editLabel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/label_dec"
+        android:paddingLeft="20dp"
+        android:gravity="left"
+        android:hint="List Title"
+        android:inputType="text"
+        android:textColor="#090909"
+        android:textSize="36sp"
+        android:textStyle="italic" />
+
+    <EditText
+
+        android:id="@+id/insertList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/label_dec"
+        android:gravity="left"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:hint="Enter description here"
+        android:textColor="#090909"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+</RelativeLayout>

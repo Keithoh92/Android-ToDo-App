@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#535252"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/todo_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="150dp"
+        android:background="#C9C8C7"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/label_dec"
+        android:gravity="center_horizontal"
+        android:text="My Lists"
+        android:textColor="#090909"
+        android:textSize="36sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_dec"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Create"
+        android:onClick="onClickCreate"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_dec"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Edit"
+        android:onClick="editClick"
+        android:textSize="24sp" />
+
+</RelativeLayout>
